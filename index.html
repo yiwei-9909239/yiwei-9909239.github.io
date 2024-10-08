@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>個人 簡介</title>
+    <title>個人簡介</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #1a1a1a;
+            color: #fff;
         }
         .container {
             width: 80%;
@@ -17,90 +18,80 @@
             overflow: hidden;
         }
         header {
-            background: #333;
+            background: linear-gradient(90deg, #ff8a00, #e52e71);
             color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
+            padding: 20px 0;
+            text-align: center;
             border-bottom: #77aaff 3px solid;
         }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            float: left;
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
+        header h1 {
             margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
+            font-size: 2.5em;
         }
         .showcase {
             min-height: 400px;
-            background: url('background.jpg') no-repeat 0 -400px;
+            background: url('background.jpg') no-repeat center center/cover;
             text-align: center;
             color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            animation: fadeIn 2s ease-in-out;
         }
         .showcase h1 {
-            margin-top: 100px;
-            font-size: 55px;
+            font-size: 3em;
             margin-bottom: 10px;
         }
         .showcase p {
-            font-size: 20px;
+            font-size: 1.5em;
         }
         .content {
             padding: 20px;
-            background: #fff;
+            background: #222;
         }
         .content h2 {
             text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
         }
         .content p {
             line-height: 1.6;
+            font-size: 1.2em;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <div id="branding">
-                <h1>個人 簡介</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">首頁</a></li>
-                    <li><a href="#">關於我</a></li>
-                    <li><a href="#">聯絡方式</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>個人簡介</h1>
     </header>
     <section class="showcase">
         <div class="container">
             <h1>歡迎來到我的個人簡介</h1>
-            <p>這裡是關於我的一些資訊。</p>
+            <p>探索我的世界，了解更多關於我的資訊。</p>
         </div>
     </section>
     <section class="content">
         <div class="container">
             <h2>關於我</h2>
-            <p>你好，我是一名軟體工程師，專注於前端和後端開發。我喜歡學習新技術並應用於實際項目中。</p>
-            <p>我的興趣包括程式設計、閱讀和旅行。我相信持續學習和自我提升是成功的關鍵。</p>
+            <p>你好，我是一名充滿熱情的軟體工程師，專注於前端和後端開發。我喜歡學習新技術並應用於實際項目中，致力於創造高效且美觀的應用程式。</p>
+            <p>我的興趣包括程式設計、閱讀和旅行。我相信持續學習和自我提升是成功的關鍵，並且我樂於分享我的知識和經驗。</p>
         </div>
     </section>
+    <footer>
+        <p>&copy; 2023 我的個人簡介. 版權所有.</p>
+    </footer>
 </body>
 </html>
